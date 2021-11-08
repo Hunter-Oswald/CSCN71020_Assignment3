@@ -27,5 +27,15 @@ namespace Assignment3tests
 			// assert
 			Assert::AreEqual(expected, RPS(playerOne, playerTwo));
 		}
+
+		TEST_METHOD(T002_RPSGame_scissorsVsPaper)
+		{
+			char* playerOne = "Scissors";
+			char* playerTwo = "Paper";
+			char* expected = "Player1";
+
+			// assert
+			Assert::AreEqual(expected, RPS(playerOne, playerTwo));
+		}
 	};
 }

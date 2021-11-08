@@ -23,6 +23,12 @@ char* RPS(char* playerOneChoice, char* playerTwoChoice) {
 	if ((playerOneChoice == "Rock") && (playerTwoChoice == "Scissors")) {
 		return "Player1";
 	}
+	else if ((playerTwoChoice == "Rock") && (playerOneChoice == "Scissors")) {
+		return "Player2";
+	}
+	else if ((playerOneChoice == "Scissors") && (playerTwoChoice == "Paper")) {
+		return "Player1";
+	}
 
 	return "Invalid";
 }
